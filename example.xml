@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="s5000">
+    <tb_top>chip_tb</tb_top>
+    <dut_top>top</dut_top>
+
+    <config_item name="PXP_VERSION" type='bool'>
+        <default>y</default>
+        <depends_on>
+            <y>cluster0=D</y>
+            <n>cluster0=S</n>
+        </depends_on>
+        <help>PXP_VERSION is using to delete pll logic in cru</help>
+    </config_item>
+
+    <config_item name="ADDR_DEPTH" type='int'>
+        <option>10*1024</option>
+        <default>128*1024</default>
+        <depends_on>
+            <D>PXP_VERSION=y</D>
+        </depends_on>
+        <help>select cell for cluster0</help>
+    </config_item>
+    
+    <config_item name="cluster0" type='instance'>
+        <option>D V S N</option>
+        <default>D</default>
+        <depends_on>
+            <D>PXP_VERSION=y</D>
+        </depends_on>
+        <hdl_path>chip_tb.cpu.cluster0</hdl_path>
+        <help>select cell for cluster0</help>
+    </config_item>
+
+    <config_item name="cluster1" type="instance">
+        <option>D V S N</option>
+        <default>D</default>
+        <depends_on>
+            <D>PXP_VERSION=y</D>
+        </depends_on>
+        <hdl_path>chip_tb.cpu.cluster1</hdl_path>
+        <help>select cell for cluster1</help>
+    </config_item>
+
+    <config_item name="qspi" type="instance">
+        <option>D V S N</option>
+        <default>D</default>
+        <depends_on>
+            <D>PXP_VERSION=y</D>
+        </depends_on>
+        <hdl_path>chip_tb.cpu.iou.lsd.qspi_wrapper</hdl_path>
+        <help>select cell for qspi</help>
+    </config_item>
+</project>
