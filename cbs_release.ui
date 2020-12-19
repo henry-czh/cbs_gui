@@ -133,6 +133,21 @@
              </item>
              <item>
               <widget class="QTreeView" name="design_tree">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>10</width>
+                 <height>10</height>
+                </size>
+               </property>
+               <property name="mouseTracking">
+                <bool>true</bool>
+               </property>
                <property name="focusPolicy">
                 <enum>Qt::WheelFocus</enum>
                </property>
@@ -220,14 +235,6 @@
            </item>
            <item row="0" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QGroupBox" name="groupBox_7">
-               <property name="title">
-                <string>Instance Mode</string>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_2"/>
-              </widget>
-             </item>
              <item>
               <widget class="QGroupBox" name="groupBox_6">
                <property name="title">
