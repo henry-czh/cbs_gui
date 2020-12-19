@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>742</width>
-    <height>480</height>
+    <width>818</width>
+    <height>589</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -225,52 +225,7 @@
                <property name="title">
                 <string>Instance Mode</string>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_2">
-                <item>
-                 <widget class="QPushButton" name="pushButton_16">
-                  <property name="text">
-                   <string>RTL</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>ico/device_and_hardware.ico</normaloff>ico/device_and_hardware.ico</iconset>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButton_13">
-                  <property name="text">
-                   <string>Null     Model</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>ico/onenote.ico</normaloff>ico/onenote.ico</iconset>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButton_14">
-                  <property name="text">
-                   <string>Verif    Model</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>ico/vimeo.ico</normaloff>ico/vimeo.ico</iconset>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButton_15">
-                  <property name="text">
-                   <string>Simulate Model</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>ico/skype.ico</normaloff>ico/skype.ico</iconset>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <layout class="QVBoxLayout" name="verticalLayout_2"/>
               </widget>
              </item>
              <item>
@@ -442,8 +397,8 @@ p, li { white-space: pre-wrap; }
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>177</width>
-                <height>136</height>
+                <width>215</width>
+                <height>216</height>
                </rect>
               </property>
              </widget>
@@ -643,8 +598,8 @@ font: 9pt &quot;Sans Serif&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>742</width>
-     <height>22</height>
+     <width>818</width>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFIle">
@@ -706,11 +661,11 @@ font: 9pt &quot;Sans Serif&quot;;</string>
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionOpen"/>
    <addaction name="actionSelect_RTL"/>
    <addaction name="actionSelect_Null_Model"/>
    <addaction name="actionSelect_Verif_Model"/>
    <addaction name="actionSelect_Simulate_Model"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actionOpen">
    <property name="icon">
@@ -750,21 +705,37 @@ font: 9pt &quot;Sans Serif&quot;;</string>
    </property>
   </action>
   <action name="actionSelect_RTL">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/device_and_hardware.ico</normaloff>ico/device_and_hardware.ico</iconset>
+   </property>
    <property name="text">
     <string>Select RTL</string>
    </property>
   </action>
   <action name="actionSelect_Null_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/onenote.ico</normaloff>ico/onenote.ico</iconset>
+   </property>
    <property name="text">
     <string>Select Null Model</string>
    </property>
   </action>
   <action name="actionSelect_Verif_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/vimeo.ico</normaloff>ico/vimeo.ico</iconset>
+   </property>
    <property name="text">
     <string>Select Verif Model</string>
    </property>
   </action>
   <action name="actionSelect_Simulate_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/skype.ico</normaloff>ico/skype.ico</iconset>
+   </property>
    <property name="text">
     <string>Select Simulate Model</string>
    </property>
